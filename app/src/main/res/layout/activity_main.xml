@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#05756A"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/notastitulo"
+        android:text="NOTAS"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/addnewnotebtn"
+        android:layout_below="@id/notastitulo" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+ Nova Nota"
+        android:id="@+id/addnewnotebtn"
+        android:textColor="#05756A"
+        android:backgroundTint="@color/white"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>
