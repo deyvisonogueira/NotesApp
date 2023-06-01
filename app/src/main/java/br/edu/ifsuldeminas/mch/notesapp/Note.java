@@ -2,10 +2,11 @@ package br.edu.ifsuldeminas.mch.notesapp;
 
 import io.realm.RealmObject;
 
+
 public class Note extends RealmObject {
     String titulo;
     String descricao;
-    String criarHora;
+    long criarHora;
 
     public String getTitulo() {
         return titulo;
@@ -23,11 +24,11 @@ public class Note extends RealmObject {
         this.descricao = descricao;
     }
 
-    public String getCriarHora() {
+    public long getCriarHora() {
         return criarHora;
     }
 
-    public void setCriarHora(String criarHora) {
+    public void setCriarHora(long criarHora) {
         this.criarHora = criarHora;
     }
 }

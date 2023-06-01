@@ -5,14 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#05756A"
+    android:background="#F87D0A"
+    android:padding="20dp"
     tools:context=".AddNoteActivity">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/titulotexview"
-        android:text="+ Nova Nota"
+        android:id="@+id/titulotextview"
+        android:text="Nova Nota"
         android:textColor="@color/white"
         android:textSize="20dp"
         android:textStyle="bold"
@@ -21,6 +22,40 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/rounded_corner">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tituloInput"
+            android:hint="Título"
+            android:background="#30F87D0A"
+            android:padding="10dp"
+            android:layout_margin="10dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/descricaoInput"
+            android:hint="Descrição"
+            android:background="#30F87D0A"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:lines="10"
+            android:gravity="top"/>
+
+    </LinearLayout>
+    
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/salvarbtn"
+        android:text="Salvar Nota"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/white"
+        android:textColor="#F87D0A"/>
 
 </LinearLayout>

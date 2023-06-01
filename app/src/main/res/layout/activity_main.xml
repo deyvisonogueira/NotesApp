@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#05756A"
+    android:background="#F87D0A"
     android:padding="10dp"
     tools:context=".MainActivity">
 
@@ -29,7 +29,7 @@
         android:layout_height="wrap_content"
         android:text="+ Nova Nota"
         android:id="@+id/addnewnotebtn"
-        android:textColor="#05756A"
+        android:textColor="#F87D0A"
         android:backgroundTint="@color/white"
         android:layout_alignParentBottom="true"/>
 
