@@ -2,7 +2,6 @@ package br.edu.ifsuldeminas.mch.notesapp;
 
 import io.realm.RealmObject;
 
-
 public class Note extends RealmObject {
     String titulo;
     String descricao;
