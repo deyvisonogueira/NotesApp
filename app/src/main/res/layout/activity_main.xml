@@ -1,39 +1,42 @@
-<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F87D0A"
-    android:padding="10dp"
-    tools:context=".MainActivity">
-
-
+    android:background="#F87D0A">
 
     <TextView
+        android:id="@+id/titleTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/notastitulo"
-        android:text="NOTAS"
-        android:textSize="20dp"
+        android:text="Minhas Notas"
+        android:textSize="40sp"
         android:textColor="@color/white"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:shadowColor="#80000000"
+        android:shadowDx="0"
+        android:shadowDy="2"
+        android:shadowRadius="10" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerview"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@id/addnewnotebtn"
-        android:layout_below="@id/notastitulo" />
+    <ImageView
+        android:id="@+id/animatedImage"
+        android:layout_width="336dp"
+        android:layout_height="449dp"
+        android:layout_below="@id/titleTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-2dp"
+        android:src="@drawable/giphy" />
 
-    <com.google.android.material.button.MaterialButton
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="+ Nova Nota"
-        android:id="@+id/addnewnotebtn"
+        android:text="Ver minhas notas"
         android:textColor="#F87D0A"
         android:backgroundTint="@color/white"
-        android:layout_alignParentBottom="true"/>
-
+        android:layout_below="@id/animatedImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
 
 </RelativeLayout>

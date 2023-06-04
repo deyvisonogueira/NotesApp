@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="titulotextview" type="id" />
+    <item name="back_button" type="id" />
+    <item name="toolbar" type="id" />
+    <item name="appbar" type="id" />
+    <item name="appBarCardView" type="id" />
+    <item name="tituloInput" type="id" />
+    <item name="descricaoInput" type="id" />
+    <item name="salvarbtn" type="id" />
+</resources>
